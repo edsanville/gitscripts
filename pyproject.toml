@@ -1,0 +1,12 @@
+[project]
+name = "gitscripts"
+authors = [{name = "Ed Sanville", email = "edsanville@gmail.com"}]
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "requests"
+]
+
+[project.scripts]
+ls-branch = "gitscripts.gitlsbranch:main"
+rm-branch = "gitscripts.gitrmbranch:main"

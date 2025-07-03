@@ -51,7 +51,7 @@ def timeDeltaToString(td: timedelta):
     return '0 seconds'
 
 
-if __name__ == '__main__':
+def main():
     branches = getBranchList()
     branches.sort(key=lambda branch: branch.date, reverse=True)
 
@@ -63,3 +63,7 @@ if __name__ == '__main__':
         age = datetime.now().astimezone() - branch.date
         ageString = timeDeltaToString(age)
         print(f'{ageString:20s}  {branch.name:30s}')
+
+
+if __name__ == '__main__':
+    main()
